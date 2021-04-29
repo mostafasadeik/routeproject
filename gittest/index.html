@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container w-50">
+        <div class="slide">
+            <label>productName</label>
+            <input onkeyup="validate(this.value)" type="text" class="form-control" id="productName">
+            <div id="alert" class="alert alert-danger my-3 text-center">
+                name must start with UpperCase
+            </div>
+            <label>productCategory</label>
+            <input type="text" class="form-control" id="productCategory">
+            <label>productPrice</label>
+            <input type="text" class="form-control" id="productPrice">
+            <label for="description">description</label>
+            <textarea id="description" class="form-control"></textarea>
+            <input onclick="getdata()" class="btn btn-info w-25 my-3" value="add">
+        </div>
+
+    </div>
+    <div class="search my-3">
+        <!-- <label for="search">search</label> -->
+        <input onkeyup="search()" id="search" type="text" id="search" placeholder="search" class="w-25">
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th>id</th>
+                <th>name</th>
+                <th>cat</th>
+                <th>price</th>
+                <th>desc</th>
+                <th>delete</th>
+                <th>update</th>
+            </thead>
+            <tbody id="tableb">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
