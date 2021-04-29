@@ -1,0 +1,16 @@
+.slide{
+    box-shadow: -1px -1px 24px 5px rgba(0,0,0,0.55);
+    padding: 20px;
+    margin: 40px;
+}
+.search{
+    /* background-color: aqua; */
+    text-align: center;
+    
+}
+td span{
+    background-color: yellow;
+}
+#alert{
+    display: none;
+}
